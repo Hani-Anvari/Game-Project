@@ -1,0 +1,41 @@
+!git initialization!
+0.learn more about git along the project
+1.UML of the project
+  - Choose a name for game
+  - Figure out the Logic of the game
+  - Draw it using darw.io
+2.Learning Http requests
+  - What is it?
+  - How it's done?
+  - What do I need to use it
+  - What is json file
+3.Learning Data base
+  - How to work with SQL
+  - Choosing between CSV and SQL
+4.Learning Qt
+  - Learn basics
+  - How to implement classes in Qt
+  - How to implement Http requests in Qt
+  - How to implement Data base in Qt
+  - How to work with CSS
+5.Draw a sketch of the ui
+6.Creat a repository for the project
+!first github push!
+7.Start coding the Classes
+  - Sign-in
+  - Login
+  - Ranking
+*A commit for every class*
+8.Start working with the ui
+  - bottun and windows
+
+Project Overview
+{
+  - Create simple sign-in and login panel
+  - Create main menu
+	. Select game mode:
+	  / Start game
+	  / Ranking
+	  / Quit
+  - Create sign-in\login short cut for the second player (goes to the sign-in\login panel)
+}
