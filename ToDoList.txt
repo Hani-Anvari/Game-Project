@@ -1,20 +1,20 @@
-!git initialization!
+!git initialization! ~Done~
 0.learn more about git along the project
 1.UML of the project
-  - Choose a name for game
-  - Figure out the Logic of the game
-  - Draw it using darw.io
+  - Choose a name for the game ~Done~
+  - Figure out the Logic of the game ~
+  - Draw it using darw.io ~
 2.Learning Http requests
   - What is it?
   - How it's done?
   - What do I need to use it
   - What is json file
 3.Learning Data base
-  - How to work with SQL
+  - How to work with SQL/SQLite
   - Choosing between CSV and SQL
 4.Learning Qt
   - Learn basics
-  - How to implement classes in Qt
+  - How to implement classes in Qt ~
   - How to implement Http requests in Qt
   - How to implement Data base in Qt
   - How to work with CSS
@@ -22,20 +22,52 @@
 6.Creat a repository for the project
 !first github push!
 7.Start coding the Classes
-  - Sign-in
-  - Login
+  - Login ~
+  - 
   - Ranking
-*A commit for every class*
+*A commit for every stage*
 8.Start working with the ui
   - bottun and windows
 
 Project Overview
 {
-  - Create simple sign-in and login panel
+  - Create simple login panel 
   - Create main menu
-	. Select game mode:
 	  / Start game
+		. Select game mode: 
+		1-Mind Marathon
+			. one player only             
+			. the player has three chances
+			. every question has a _min time limit
+			. for every wrong answer loses one chance
+			. if the clock runs out also loses one chance
+			-- Category
+			-- dificulty
+		2-Battle of Brains
+			. two players duel for 4 rounds
+			. every round has 5 questions
+			. every question has a _min time limit
+			. if the clock runs out that question is considerd wrong
+			. player with more correct answers in every round wins that round
+			. After 4 rounds, the player who has won more rounds, wins that game
+			. if the result is a draw there will be a golden round until one player wins 
+			-- Category
+			-- dificulty
 	  / Ranking
+		-- filter
+		  . top three
+		  . top five
+		  . top ten
+		  . all
 	  / Quit
-  - Create sign-in\login short cut for the second player (goes to the sign-in\login panel)
+		. delete all pointers
+		. close all windows
+		. save the necessary data
+  - Create login short cut for the second player (goes to the login panel)
+  - Player
+	/ can join the game
+	/ has a score
+		. easy question   = 1 score
+		. medium question = 2 score
+		. hard question   = 3 score
 }
