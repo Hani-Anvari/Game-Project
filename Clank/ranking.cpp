@@ -1,3 +1,10 @@
 #include "ranking.h"
+#include "ui_ranking.h"
 
-Ranking::Ranking() {}
+Ranking::Ranking(QWidget *parent)
+    : QDialog(parent)
+    , ui(new Ui::Ranking)
+{
+    ui->setupUi(this);
+}
+Ranking::~Ranking(){}

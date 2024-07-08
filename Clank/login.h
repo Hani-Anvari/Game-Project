@@ -2,6 +2,7 @@
 #define LOGIN_H
 
 #include <QDialog>
+#include "player.h"
 
 namespace Ui {
 class Login;
@@ -13,8 +14,7 @@ class Login : public QDialog
 
 public:
     explicit Login(QWidget *parent = nullptr);
-    void set_userName(QString name);
-    QString get_userName()const;
+    Player getPlayer()const;
     ~Login();
 
 private slots:
@@ -22,7 +22,7 @@ private slots:
 
 private:
     Ui::Login *ui;
-    QString *userName;
+    Player player;
 };
 
 #endif // LOGIN_H

@@ -1,19 +1,26 @@
 #ifndef APIREQUEST_H
 #define APIREQUEST_H
 #include "Category.h"
-#include "Question.h"
+#include "QuizItem.h"
 #include <QString>
 #include <QVector>
+#include <QNetworkAccessManager>
+#include <QNetworkReply>
+#include <QUrl>
 
 class APIRequest
 {
 public:
     APIRequest();
-    bool question(QVector<Question>& arr, const int& amount, const Category& category, const QString& difficulty);
-    QString session_token();
+    void getQuizItems(QVector<QuizItem>& arr, const int& amount, const Category& category, const QString& difficulty);
 private:
     static QString token;
+    QUrl URL;
+    QNetworkAccessManager *manager;
+    void onQuizItemsReplyFinished(QNetworkReply *reply, QVector<QuizItem>& quizItems);
+    void onTokenReplyFinished(QNetworkReply *reply);
     bool result(int result);
+    void session_token();
 };
 
 #endif // APIREQUEST_H
@@ -22,3 +29,5 @@ private:
 //To get questions from any category, don't specify a category.
 //A Maximum of 50 Questions can be retrieved per call.
 //Session Tokens will be deleted after 6 hours of inactivity. In this program for every new game a new token is used.
+
+// connect(sender, SIGNAL(signal), receiver, SLOT(slot))

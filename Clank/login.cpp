@@ -10,26 +10,18 @@ Login::Login(QWidget *parent)
 
 Login::~Login()
 {
-    delete userName;
     delete ui;
 }
 
 void Login::on_loginPushButton_clicked()
 {
-    set_userName(ui->loginLineEdit->text());
+    player.setUserName(ui->loginLineEdit->text());
+    hide();
+}
+Player Login::getPlayer()const
+{
     //Check database for players info
     //if found set name and score
     //else add name and set score to 0
-    hide();
-}
-
-void set_userName(QString name)
-{
-    userName = new QString();
-    userName = name;
-}
-
-QString get_userName()const
-{
-    return userName;
+    return player;
 }

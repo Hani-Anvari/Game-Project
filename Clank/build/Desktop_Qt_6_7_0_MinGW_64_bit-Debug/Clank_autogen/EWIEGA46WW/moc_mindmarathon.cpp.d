@@ -1,4 +1,4 @@
-F:/Hani/Class/CS/Practices/Game_Project/Clank/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/Clank_autogen/EWIEGA46WW/moc_login.cpp: F:/Hani/Class/CS/Practices/Game_Project/Clank/login.h \
+F:/Hani/Class/CS/Practices/Game_Project/Clank/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/Clank_autogen/EWIEGA46WW/moc_mindmarathon.cpp: F:/Hani/Class/CS/Practices/Game_Project/Clank/mindmarathon.h \
   F:/Hani/Class/CS/Practices/Game_Project/Clank/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/Clank_autogen/moc_predefs.h \
   C:/Qt/6.7.0/mingw_64/include/QtCore/QString \
   C:/Qt/6.7.0/mingw_64/include/QtCore/q20functional.h \

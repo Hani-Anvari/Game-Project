@@ -355,4 +355,5 @@ F:/Hani/Class/CS/Practices/Game_Project/Clank/build/Desktop_Qt_6_7_0_MinGW_64_bi
   C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/vadefs.h \
   C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/wchar.h \
   F:/Hani/Class/CS/Practices/Game_Project/Clank/login.h \
+  F:/Hani/Class/CS/Practices/Game_Project/Clank/player.h \
   F:/Hani/Class/CS/Practices/Game_Project/Clank/ranking.h

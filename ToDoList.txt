@@ -5,17 +5,17 @@
   - Figure out the Logic of the game ~
   - Draw it using darw.io ~
 2.Learning Http requests
-  - What is it?
-  - How it's done?
-  - What do I need to use it
-  - What is json file
+  - What is it? ~Done~
+  - How it's done? ~Done~
+  - What do I need to use it ~Done~
+  - What is json file ~Done~
 3.Learning Data base
   - How to work with SQL/SQLite
   - Choosing between CSV and SQL
 4.Learning Qt
   - Learn basics
   - How to implement classes in Qt ~
-  - How to implement Http requests in Qt
+  - How to implement Http requests in Qt ~Done~
   - How to implement Data base in Qt
   - How to work with CSS
 5.Draw a sketch of the ui
@@ -23,7 +23,7 @@
 !first github push!
 7.Start coding the Classes
   - Login ~
-  - 
+  - APIRequest 
   - Ranking
 *A commit for every stage*
 8.Start working with the ui

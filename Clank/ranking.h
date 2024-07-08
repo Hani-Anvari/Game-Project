@@ -16,14 +16,12 @@ public:
     explicit Ranking(QWidget *parent = nullptr);
     load();
     sort();
-    void set_gameMode(QString& mode);
     void display();
     ~Ranking();
 
 private:
     Ui::Ranking *ui;
     //QVector<Player> players;
-    QString *gameMode;
 
 };
 

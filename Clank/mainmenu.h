@@ -26,11 +26,15 @@ private slots:
 
     void on_rankingPushButton_clicked();
 
+    void on_quitPushButton_clicked();
+
+    void on_startPushButton_clicked();
+
 private:
     Ui::MainMenu *ui;
     Login *login;
     Ranking *ranking;
     QString *game_mode;
-    //Player *host;
+    Player *host;
 };
 #endif // MAINMENU_H

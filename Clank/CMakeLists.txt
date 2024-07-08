@@ -11,6 +11,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets)
 find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets)
+find_package(Qt6 REQUIRED COMPONENTS Network)
 
 set(PROJECT_SOURCES
         main.cpp
@@ -26,9 +27,11 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         login.h login.cpp login.ui
         APIRequest.h APIRequest.cpp
         Category.h
-        Question.h
+        QuizItem.h QuizItem.cpp
         ranking.h ranking.cpp ranking.ui
-
+        player.h player.cpp
+        mindmarathon.h mindmarathon.cpp mindmarathon.ui
+        battleofbrains.h battleofbrains.cpp battleofbrains.ui
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET Clank APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR
@@ -48,7 +51,7 @@ else()
     endif()
 endif()
 
-target_link_libraries(Clank PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)
+target_link_libraries(Clank PRIVATE Qt${QT_VERSION_MAJOR}::Widgets Qt6::Network)
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
 # If you are developing for iOS or macOS you should consider setting an
